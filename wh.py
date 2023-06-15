@@ -9,7 +9,7 @@ url_page_other_pages = 'https://www.whitehouse.gov/briefing-room/press-briefings
 # url_page_other_pages = 'https://www.whitehouse.gov/briefing-room/speeches-remarks/page/'
 
 current_page = 1
-pages_to_check = 1
+pages_to_check = 4
 articles_to_check = []
 word_to_search_for = ' clear '
 secondary_to_search_for = 'very'
