@@ -48,6 +48,7 @@ for articles_to_check in articles_to_check:
 		if len(all_occurances):
 			for occurance in all_occurances:
 				this_occurance = p.text[occurance-chars_surrounding:occurance+chars_surrounding+len(word_to_search_for)]
+				this_occurance = this_occurance.replace(u'\xa0', u' ')
 				secondary_array = [m.start() for m in re.finditer(secondary_to_search_for, this_occurance)]
 				occurances.append(this_occurance + f' -- [{len(secondary_array)}] -- {soup.title.text}')
 
